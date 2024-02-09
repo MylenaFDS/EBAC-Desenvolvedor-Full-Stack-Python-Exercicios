@@ -1,0 +1,3 @@
+[submodule "Modulo-Git"]
+	path = Modulo-Git
+	url = https://github.com/MylenaFDS/Modulo-Git
