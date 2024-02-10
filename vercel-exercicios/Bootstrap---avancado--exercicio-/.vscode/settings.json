@@ -1,0 +1,4 @@
+{
+    "liveServer.settings.port": 5501,
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}${appName}${separator}[Branch: bootstrap_avancado]"
+}

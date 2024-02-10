@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>RetroGroove80s</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            margin-top: 20px;
+            text-align: center;
+            /* Centraliza o texto */
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .navbar {
+            background-color: #343a40;
+            padding: 15px;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-size: 1.5em;
+        }
+
+        .navbar-toggler-icon {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .navbar-toggler {
+            border: none;
+            background: transparent !important;
+        }
+
+        .navbar-toggler:focus {
+            outline: none !important;
+        }
+
+        .navbar-toggler:hover {
+            background-color: #ccc !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            margin-right: 10px;
+        }
+
+        .nav-link{
+          text-align: center;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: transparent;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+
+        .carousel-indicators {
+            margin-bottom: 20px;
+        }
+
+        .carousel-indicators button {
+            background-color: #007bff;
+        }
+
+        .card {
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            transition: transform 0.2s;
+            margin-top: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            color: #343a40;
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: #6c757d;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .container {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">RetroGroove80s</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#musicas">Músicas</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+  
+
+  <!-- Cabeçalho com Carrossel de Imagens -->
+  <header>
+    <div class="container">
+      <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div data-bs-interval="3000" class="carousel-item active">
+                  <img class="d-block w-75 mx-auto" src="./images/CyndiLauper.jpg" alt="Album Girls Just Wanna Have Fun">
+              </div>
+              <div data-bs-interval="3000" class="carousel-item">
+                  <img class="d-block w-75 mx-auto" src="./images/ForeverYoung.jpg" alt="Álbum Forever Young">
+              </div>
+              <div data-bs-interval="3000" class="carousel-item">
+                  <img class="d-block w-75 mx-auto" src="./images/Capa_de_I_Wanna_Dance_With_Somebody.jpg" alt="Álbum I Wanna Dance With Somebody">
+              </div>
+              <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-75 mx-auto" src="./images/Thriller_25.jpg" alt="Álbum Thriller">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+              <img class="d-block w-75 mx-auto" src="./images/BillyIdol.jpg" alt="Álbum Billy Idol">
+          </div>
+          <div data-bs-interval="3000" class="carousel-item">
+            <img class="d-block w-75 mx-auto" src="./images/Bon_jovi_slippery_when_wet.jpg" alt="Álbum Slippery When Wet">
+        </div>
+          </div>
+          <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+              <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+              <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="5"></button>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="sobre" class="container mt-4">
+    <h2>Sobre</h2>
+    <p>
+      O RetroGroove80s é uma homenagem à era dourada da música, onde os anos 80 trouxeram uma explosão de artistas inovadores e hits inesquecíveis.
+      Explore nossa coleção de músicas que capturam a essência dessa década vibrante e repleta de estilo.
+    </p>
+  </section>
+
+  <!-- Seção Músicas com Cards -->
+  <section id="musicas" class="container mt-4">
+    <h2>Músicas</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+          <img src="./images/CyndiLauper.jpg" class="card-img-top" alt="Música 1">
+          <div class="card-body">
+            <h5 class="card-title">Girls Just Wanna Have Fun</h5>
+            <p class="card-text">Um dos maiores sucessos de Cyndi Lauper, com uma batida contagiante e mensagem empoderadora.</p>
+            <button class="btn btn-primary" onclick="toggleAudio('audio1', this)">Ouça</button>
+            <audio id="audio1" src="./musics/Girls_Just_Wanna_Have_Fun.mpeg"></audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+          <img src="./images/ForeverYoung.jpg" class="card-img-top" alt="Música 2">
+          <div class="card-body">
+            <h5 class="card-title">Forever Young</h5>
+            <p class="card-text">Um clássico atemporal do Alphaville que evoca nostalgia e sentimentos de juventude eterna.</p>
+            <button class="btn btn-primary" onclick="toggleAudio('audio2', this)">Ouça</button>
+            <audio id="audio2" src="./musics/Alphaville_-_Forever_Young_(BornMP3.com).mp3"></audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+          <img src="./images/Capa_de_I_Wanna_Dance_With_Somebody.jpg" class="card-img-top" alt="Música 3">
+          <div class="card-body">
+            <h5 class="card-title">I Wanna Dance With Somebody</h5>
+            <p class="card-text">Um sucesso inesquecível de Whitney Houston, perfeito para quem quer se soltar na pista de dança.</p>
+            <button class="btn btn-primary" onclick="toggleAudio('audio3', this)">Ouça</button>
+            <audio id="audio3" src="./musics/Whitney_Houston_-_I_Wanna_Dance_With_Somebody.mp3"></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+          <img src="./images/Thriller_25.jpg" class="card-img-top" alt="Música 4">
+          <div class="card-body">
+            <h5 class="card-title">Thriller</h5>
+            <p class="card-text">"Thriller" é uma música icônica de Michael Jackson que se tornou um fenômeno mundial. Lançada como
+              o sétimo single do álbum homônimo de 1982, "Thriller" é conhecida por seu videoclipe
+              revolucionário e coreografia memorável.</p>
+            <button class="btn btn-primary" onclick="toggleAudio('audio4', this)">Ouça</button>
+            <audio id="audio4" src="./musics/Thriller - Michael Jackson.mp4"></audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+          <img src="./images/BillyIdol.jpg" class="card-img-top" alt="Música 5">
+          <div class="card-body">
+            <h5 class="card-title">Dancing with myself</h5>
+            <p class="card-text">"Dancing with Myself" é uma canção energética de Billy Idol que captura a essência do espírito punk e new wave
+              dos anos 80. Lançada inicialmente com a banda Generation X em 1980, a versão solo de Billy Idol,
+              lançada em 1981, tornou-se um sucesso internacional.
+          </p></p>
+            <button class="btn btn-primary" onclick="toggleAudio('audio5', this)">Ouça</button>
+            <audio id="audio5" src="./musics/Dancing with Myself.mpeg"></audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+          <img src="./images/Bon_jovi_slippery_when_wet.jpg" class="card-img-top" alt="Música 3">
+          <div class="card-body">
+            <h5 class="card-title">Livin' On A Prayer</h5>
+            <p class="card-text">"Livin' On A Prayer" é um clássico da banda Bon Jovi, lançado no álbum "Slippery When Wet". A música é conhecida por seu poderoso refrão e letras envolventes, capturando a essência do espírito otimista. Uma verdadeira canção emblemática dos anos 80 que continua a ser amada por fãs de todas as idades.</p>
+            <button class="btn btn-primary" onclick="toggleAudio('audio6', this)">Ouça</button>
+            <audio id="audio6" src="./musics/Livin' On A Prayer.mpeg"></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+  <script>
+    var currentAudio = null;
+
+    function toggleAudio(audioId, button) {
+      var audio = document.getElementById(audioId);
+
+      if (currentAudio && currentAudio !== audio) {
+        currentAudio.pause();
+        if (currentAudio !== button) {
+          togglePlayPauseButton(currentAudio, 'play');
+        }
+      }
+
+      if (audio.paused) {
+        audio.play();
+        togglePlayPauseButton(button, 'pause');
+      } else {
+        audio.pause();
+        togglePlayPauseButton(button, 'play');
+      }
+
+      currentAudio = audio;
+    }
+
+    function togglePlayPauseButton(button, action) {
+      button.innerHTML = (action === 'pause') ? 'Pausar' : 'Ouça';
+    }
+  </script>
+
+</body>
+</html>
+
+
