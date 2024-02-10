@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.castle-bg {
+    background-image: url('castle.jpeg'); /* Adicione uma imagem de um castelo aqui */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medieval-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    width: 300px;
+    text-align: center;
+}
+
+.medieval-form h1 {
+    font-family: 'Old English Text MT', serif;
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.medieval-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-family: 'Old English Text MT', serif;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.medieval-form input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.medieval-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Old English Text MT', serif;
+    font-size: 18px;
+}
+
+.medieval-form button:hover {
+    background-color: #45a049;
+}
+
+
