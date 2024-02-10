@@ -1,0 +1,166 @@
+body {
+    font-family: 'Garamond', serif;
+    color: #333;
+    margin: 0;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #FFD700; /* Amarelo Dourado */
+    font-weight: bold;
+}
+
+form {
+    background-color:transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+label {
+    font-size: 24px;
+    color: #FFD700; /* Amarelo Dourado */
+    font-weight: bold;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-check-label {
+    font-size: 16px;
+    color: #FFD700; /* Amarelo Dourado */
+}
+
+.btn-success {
+    background-color: #8B4513;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #A0522D;
+}
+
+/* Media Queries */
+
+/* Layout Desktop (a partir de 1024px) */
+@media screen and (min-width: 1024px) {
+    header {
+        /* Exemplo de estilo específico para header em desktop */
+        padding: 20px;
+    }
+
+    nav {
+        /* Exemplo de estilo específico para navegação em desktop */
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+    }
+}
+
+/* Layout Tablet (de 641px até 1023px) */
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    header {
+        /* Exemplo de estilo específico para header em tablet */
+        padding: 15px;
+    }
+
+    nav {
+        /* Exemplo de estilo específico para navegação em tablet */
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+    }
+
+    .product {
+        width: 48%;
+    }
+}
+
+/* Layout Mobile (até 640px) */
+@media screen and (max-width: 640px) {
+    .about {
+        display: block;
+    }
+
+    nav {
+        /* Exemplo de estilo específico para navegação em mobile */
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #bc6628;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-hamburguer.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-hamburguer.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-hamburguer.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .product {
+        width: 100%;
+    }
+}
+
